@@ -17,7 +17,7 @@ A clean, responsive web application that calculates a user's exact age in **year
 ## How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   (https://github.com/Saaaiii/age_calculator.git)
    ```
 2. Navigate to the project folder:
    ```bash
