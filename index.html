@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exact Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Age Calculator</h1>
+    <p class="subtitle">Enter your date of birth to calculate your exact age.</p>
+
+    <form id="age-form" novalidate>
+      <div class="input-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required />
+      </div>
+      <div class="input-group">
+        <label for="target-date">Calculate Age On (Optional)</label>
+        <input type="date" id="target-date" />
+      </div>
+      <p id="error-msg" class="error" aria-live="polite"></p>
+      <button type="submit">Calculate Age</button>
+    </form>
+
+    <section id="results" class="results hidden">
+      <div class="primary-result">
+        <div><span id="years">0</span><small>Years</small></div>
+        <div><span id="months">0</span><small>Months</small></div>
+        <div><span id="days">0</span><small>Days</small></div>
+      </div>
+
+      <div class="extra-stats">
+        <p><strong>Total Days Lived:</strong> <span id="total-days">0</span></p>
+        <p><strong>Next Birthday:</strong> <span id="next-bday">-</span></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
